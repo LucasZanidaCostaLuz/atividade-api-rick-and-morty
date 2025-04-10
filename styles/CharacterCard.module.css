@@ -1,3 +1,12 @@
+@keyframes degrade {
+    0%{
+       background-position-x: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
 .card{
     width: 275px;
     background-color: white;
@@ -12,12 +21,28 @@
     transform: scale(1.1);
 }
 
+.card:hover > .title, .avatar {
+    transform: scale(1.1);
+    animation: degrade 5s linear infinite alternate;
+}
+
+.card:hover > .avatar {
+    border-style: solid ;
+}
+
 .avatar{
     width: 125px;
     border-radius: 50%;
+    background-image: linear-gradient(45deg, rgb(9, 70, 4) 0%, rgba(68,162,0,1) 60%, rgba(52,255,0,1) 80%, rgba(68,162,0,1) 100% ) 1; 
+    background-size: 400% 100%;
+    background-clip: border-box;
 }
 
 .title{
     margin: 10px 0 5px;
     font-size: 20px;
+    background: linear-gradient(45deg, rgb(9, 70, 4) 0%, rgba(68,162,0,1) 60%, rgba(52,255,0,1) 80%, rgba(68,162,0,1) 100% );
+    background-size: 400% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
