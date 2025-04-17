@@ -14,3 +14,45 @@
     align-items: center;
     justify-content: center;
 }
+
+.title{
+    text-align: center;
+    color: white;
+}
+
+.notFound{
+    margin: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.input{
+    text-align: center;
+    width: 50vw;
+    height: 4vh;
+}
+
+.barraPesquisa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resetButton{
+    height: 4.5vh;
+    width: 6vw;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-style: hidden;
+    background-color: white;
+}
+
+.searchButton{
+    height: 4.5vh;
+    width: 6vw;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-style: hidden;
+    background-color: white;
+}
